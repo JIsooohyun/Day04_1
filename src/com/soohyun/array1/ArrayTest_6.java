@@ -83,7 +83,7 @@ public class ArrayTest_6 {
 			case 3:
 				System.out.println("검색할 학생의 번호를 입력");
 				search = sc.nextInt();
-				if(search == numbers[count])
+				//for문으로 돌려주세요
 				System.out.println("학생번호 : "+numbers[search-1]);
 				System.out.println("학생이름 : "+names[search-1]);
 				System.out.println("국어점수 : "+kors[search-1]);
