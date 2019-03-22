@@ -83,12 +83,11 @@ public class ArrayTest_6 {
 			case 3:
 				System.out.println("검색할 학생의 번호를 입력");
 				search = sc.nextInt();
-				//for문으로 돌려주세요
-				System.out.println("학생번호 : "+numbers[search-1]);
-				System.out.println("학생이름 : "+names[search-1]);
-				System.out.println("국어점수 : "+kors[search-1]);
-				System.out.println("영어점수 : "+engs[search-1]);
-				System.out.println("수학점수 : "+maths[search-1]);
+				for(int i=0; i<numbers.length; i++) {
+					if(search == numbers[i]) {
+						System.out.println("학생번호 : "+numbers[i]+" , 학생이름 : "+names[i]+" , 국어점수 : "+kors[i]+" , 영어점수 : "+engs[i]+" , 수학점수 : "+maths[i]);
+					}
+				}
 				break;
 			case 4:
 				check=!check;
